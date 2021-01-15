@@ -1,0 +1,27 @@
+#+AUTHOR:  Chris Zheng
+#+EMAIL:   z@caudate.me
+#+OPTIONS: toc:nil
+#+STARTUP: showall
+
+** Introduction
+
+[[https://github.com/zcaudate/eta-logger][eta-logger]] is a simple keylogging implementation based from [this gist ](https://gist.github.com/darius/bf4d3f82114a937f63bf). It saves all commands, line numbers and buffers to a rotating log file.
+
+** Installation
+
+~eta-logger~ has been submitted to [[https://github.com/melpa/melpa/][Melpa]] and is going through the review
+process. In the meantime, it can be installed directly via:
+
+~quepa~
+#+BEGIN_SRC emacs-lisp
+(use-package eta-logger :ensure t
+  :quelpa ((eta :fetcher github :repo "zcaudate/eta-logger")))
+#+END_SRC
+
+~straight~
+#+BEGIN_SRC emacs-lisp
+(straight-use-package
+ '(eta-logger :type git :host github :repo "zcaudate/eta-logger")
+#+END_SRC
+
+
