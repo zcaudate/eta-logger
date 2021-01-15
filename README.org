@@ -5,7 +5,9 @@
 
 ** Introduction
 
-[[https://github.com/zcaudate/eta-logger][eta-logger]] is a simple keylogging implementation based from [this gist ](https://gist.github.com/darius/bf4d3f82114a937f63bf). It saves all commands, line numbers and buffers to a rotating log file.
+[[https://github.com/zcaudate/eta-logger][eta-logger]] is a simple keylogging implementation based from [[https://gist.github.com/darius/bf4d3f82114a937f63bf][this gist]]. It saves all commands, line numbers and buffers to a rotating log file for later playback and extraction of statistics. It assumes that emacs is not being used to input any sensative information and only records within buffers. 
+
+Modes can be excluded from being logged.
 
 ** Installation
 
